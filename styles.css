@@ -100,9 +100,9 @@ a {
   position: absolute;
   top: 28px;
   right: 0;
-  max-width: 360px;
-  gap: 12px;
-  padding: 10px 12px;
+  max-width: 390px;
+  gap: 14px;
+  padding: 10px;
   color: var(--ink);
   background: rgba(255, 255, 255, 0.56);
   border: 1px solid rgba(16, 19, 22, 0.14);
@@ -112,6 +112,25 @@ a {
   font-weight: 700;
   line-height: 1.25;
   text-decoration: none;
+}
+
+.launch-logos {
+  display: grid;
+  grid-template-columns: 88px 44px;
+  align-items: center;
+  gap: 10px;
+  flex: 0 0 auto;
+}
+
+.launch-logos img {
+  display: block;
+  width: 100%;
+  max-height: 38px;
+  object-fit: contain;
+}
+
+.launch-logos img:last-child {
+  aspect-ratio: 1;
 }
 
 .launch-badge:hover {
