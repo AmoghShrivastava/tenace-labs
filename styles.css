@@ -171,6 +171,20 @@ h1 {
   line-height: 1.45;
 }
 
+.project-note {
+  max-width: 620px;
+  margin: 18px 0 0;
+  color: var(--ink);
+  font-size: clamp(1rem, 1.6vw, 1.18rem);
+  font-weight: 500;
+  line-height: 1.55;
+}
+
+.project-note strong {
+  color: var(--accent-dark);
+  font-weight: 800;
+}
+
 .hero-actions {
   flex-wrap: wrap;
   gap: 14px;
