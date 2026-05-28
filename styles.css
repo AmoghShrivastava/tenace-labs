@@ -52,8 +52,7 @@ a {
 .brand,
 .nav-links,
 .hero-actions,
-.launch-badge,
-.createx-logo {
+.launch-badge {
   display: flex;
   align-items: center;
 }
@@ -117,24 +116,6 @@ a {
 
 .launch-badge:hover {
   border-color: rgba(16, 19, 22, 0.34);
-}
-
-.createx-logo {
-  min-width: 88px;
-  height: 32px;
-  justify-content: center;
-  gap: 1px;
-  color: #ffffff;
-  background: #b3a369;
-  border-radius: 4px;
-  font-size: 0.78rem;
-  font-weight: 800;
-}
-
-.createx-logo strong {
-  color: #101316;
-  font-size: 1.15rem;
-  line-height: 1;
 }
 
 .eyebrow,
