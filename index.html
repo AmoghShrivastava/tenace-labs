@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Tenace Labs is building in space tech, embodied AI, and robotics."
+    >
+    <title>Tenace Labs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="site-header" aria-label="Primary">
+        <a class="brand" href="/" aria-label="Tenace Labs home">
+          <span class="brand-mark" aria-hidden="true">T</span>
+          <span>Tenace Labs</span>
+        </a>
+        <nav class="nav-links" aria-label="Site">
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <section class="hero" aria-labelledby="hero-title">
+        <a class="launch-badge" href="https://create-x.gatech.edu/launch" target="_blank" rel="noreferrer">
+          <span class="createx-logo" aria-hidden="true">
+            <span>CREATE</span><strong>X</strong>
+          </span>
+          <span>Backed by Georgia Tech's CREATE-X Launch</span>
+        </a>
+        <p class="eyebrow">Space systems. Robotics. Early stage.</p>
+        <h1 id="hero-title">Tenace Labs</h1>
+        <p class="hero-copy">
+          Building in space tech, embodied AI, and robotics.
+        </p>
+        <div class="hero-actions" aria-label="Contact actions">
+          <a class="button primary" href="mailto:amoghshri1601@gmail.com?subject=Inquiry%20for%20Tenace%20Labs">
+            Contact us
+          </a>
+          <a class="button secondary" href="#collaborate">
+            Work with us
+          </a>
+        </div>
+      </section>
+
+      <section id="collaborate" class="content-section" aria-labelledby="collaborate-title">
+        <h2 id="collaborate-title">Working in space tech, embodied AI, or robotics?</h2>
+        <p>
+          If you are building, researching, investing, operating, or hiring in this space,
+          we would like to hear from you.
+        </p>
+      </section>
+
+      <section id="contact" class="contact-section" aria-labelledby="contact-title">
+        <div>
+          <h2 id="contact-title">Reach Tenace Labs</h2>
+          <p>
+            Send a note directly, or email
+            <a href="mailto:amoghshri1601@gmail.com">amoghshri1601@gmail.com</a>.
+          </p>
+        </div>
+        <form
+          class="inquiry-form"
+          action="https://formsubmit.co/amoghshri1601@gmail.com"
+          method="POST"
+        >
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_subject" value="New Tenace Labs inquiry">
+          <input type="text" name="_honey" tabindex="-1" autocomplete="off" class="form-honey">
+          <label>
+            <span>Subject</span>
+            <input name="subject" type="text" autocomplete="off" required>
+          </label>
+          <label>
+            <span>Your email</span>
+            <input name="email" type="email" autocomplete="email" required>
+          </label>
+          <label>
+            <span>Inquiry</span>
+            <textarea name="message" rows="6" required></textarea>
+          </label>
+          <button class="button primary" type="submit">Send inquiry</button>
+        </form>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
