@@ -320,6 +320,66 @@ h2 {
   cursor: pointer;
 }
 
+.form-note {
+  margin: -4px 0 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.site-footer {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 12px 28px;
+  align-items: start;
+  padding: 28px 0 40px;
+  border-top: 1px solid rgba(16, 19, 22, 0.12);
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.5;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.site-footer nav {
+  justify-self: end;
+}
+
+.site-footer a,
+.legal-page a {
+  color: var(--accent-dark);
+  font-weight: 700;
+  text-underline-offset: 4px;
+}
+
+.footer-disclaimer {
+  grid-column: 1 / -1;
+  max-width: 760px;
+}
+
+.legal-page {
+  max-width: 780px;
+  padding: 56px 0 84px;
+}
+
+.legal-page h1 {
+  margin-top: 18px;
+  font-size: clamp(3rem, 8vw, 6rem);
+}
+
+.legal-page h2 {
+  margin-top: 34px;
+  font-size: clamp(1.35rem, 2.5vw, 1.9rem);
+}
+
+.legal-page p {
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
 @media (max-width: 720px) {
   .page-shell {
     width: min(100% - 28px, 1120px);
@@ -352,6 +412,14 @@ h2 {
     grid-template-columns: 1fr;
     gap: 20px;
     padding: 42px 0;
+  }
+
+  .site-footer {
+    grid-template-columns: 1fr;
+  }
+
+  .site-footer nav {
+    justify-self: start;
   }
 }
 
