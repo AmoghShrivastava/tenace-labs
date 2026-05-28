@@ -89,10 +89,8 @@ a {
 }
 
 .hero {
-  min-height: calc(100vh - 76px);
   display: grid;
-  align-content: center;
-  padding: 72px 0 104px;
+  padding: 44px 0 104px;
 }
 
 .hero-grid {
@@ -323,8 +321,7 @@ h2 {
   }
 
   .hero {
-    min-height: calc(100vh - 68px);
-    padding: 56px 0 72px;
+    padding: 40px 0 72px;
   }
 
   .hero-grid {
@@ -354,7 +351,7 @@ h2 {
   }
 
   .hero {
-    min-height: auto;
+    padding-top: 36px;
   }
 
   .hero-grid {
