@@ -171,7 +171,8 @@ h1 {
   line-height: 1.45;
 }
 
-.project-note {
+.project-note,
+.prototype-note {
   max-width: 620px;
   margin: 18px 0 0;
   color: var(--ink);
@@ -180,7 +181,15 @@ h1 {
   line-height: 1.55;
 }
 
-.project-note strong {
+.prototype-note {
+  max-width: 560px;
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
+.project-note strong,
+.prototype-note strong {
   color: var(--accent-dark);
   font-weight: 800;
 }
