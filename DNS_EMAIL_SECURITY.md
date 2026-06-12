@@ -6,20 +6,21 @@ uses a personal Gmail address and FormSubmit for inbound contact messages.
 Because the domain is not used for outbound mail, publish strict DNS records
 that tell receivers to reject mail claiming to come from `tenacelabs.com`.
 
-## Current finding
+## Current status
 
-Checked on 2026-06-11:
+Checked on 2026-06-12:
 
 - `tenacelabs.com` uses Cloudflare nameservers:
   - `cortney.ns.cloudflare.com`
   - `matteo.ns.cloudflare.com`
-- `_dmarc.tenacelabs.com` does not exist.
-- No TXT SPF record was found at `tenacelabs.com`.
+- `tenacelabs.com` has a strict SPF TXT record: `v=spf1 -all`.
+- `_dmarc.tenacelabs.com` has a strict DMARC TXT record:
+  `v=DMARC1; p=reject; sp=reject; adkim=s; aspf=s; pct=100`.
 - No MX record was found for `tenacelabs.com`.
 
 ## Required Cloudflare DNS records
 
-Add these records in Cloudflare DNS for `tenacelabs.com`.
+Keep these records in Cloudflare DNS for `tenacelabs.com`.
 
 ### SPF
 
@@ -45,6 +46,22 @@ Proxy status: DNS only
 
 This asks receiving mail systems to reject unauthenticated mail claiming to come
 from `tenacelabs.com` or any subdomain.
+
+### DMARC aggregate reporting
+
+DMARC aggregate reporting can be added later after creating a monitored mailbox
+or third-party DMARC reporting address. Do not point `rua` to
+`dmarc@tenacelabs.com` unless that mailbox can receive mail.
+
+Example with reporting enabled:
+
+```txt
+Type: TXT
+Name: _dmarc
+Content: v=DMARC1; p=reject; sp=reject; adkim=s; aspf=s; pct=100; rua=mailto:dmarc@tenacelabs.com
+TTL: Auto
+Proxy status: DNS only
+```
 
 ### Optional null MX
 
@@ -78,7 +95,7 @@ as long as those senders pass aligned SPF or DKIM.
 
 ## Verification commands
 
-Run these after the Cloudflare records propagate:
+Run these after changing Cloudflare DNS:
 
 ```powershell
 Resolve-DnsName -Type TXT tenacelabs.com
