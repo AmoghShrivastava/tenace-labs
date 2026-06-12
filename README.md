@@ -12,6 +12,12 @@ For this workspace, a local preview server is also running at `http://localhost:
 
 The inquiry form posts to FormSubmit at `amoghshri1601@gmail.com`. The first real submission may trigger a one-time email confirmation before messages start forwarding.
 
+## Email DNS security
+
+Tenace Labs does not currently send email from `@tenacelabs.com`. Publish strict
+SPF and DMARC records in Cloudflare so spoofed mail is rejected. See
+`DNS_EMAIL_SECURITY.md` for the exact DNS records and verification commands.
+
 ## Fast, cheap deployment
 
 Best current path for this site:
