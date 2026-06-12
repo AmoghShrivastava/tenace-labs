@@ -18,6 +18,13 @@ Tenace Labs does not currently send email from `@tenacelabs.com`. Publish strict
 SPF and DMARC records in Cloudflare so spoofed mail is rejected. See
 `DNS_EMAIL_SECURITY.md` for the exact DNS records and verification commands.
 
+## Browser security headers
+
+The `_headers` file defines Cloudflare Pages security headers, including HSTS,
+CSP, clickjacking protection, MIME-sniffing protection, and a restricted browser
+permissions policy. The CSP keeps the existing Google Fonts dependency and
+FormSubmit contact form working.
+
 ## Fast, cheap deployment
 
 Best current path for this site:
