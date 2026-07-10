@@ -237,6 +237,17 @@ h1 {
   border-color: rgba(16, 19, 22, 0.38);
 }
 
+.button.tertiary {
+  color: var(--accent-dark);
+  background: transparent;
+  border: 1px solid rgba(30, 107, 90, 0.28);
+}
+
+.button.tertiary:hover {
+  border-color: rgba(30, 107, 90, 0.58);
+  background: rgba(255, 255, 255, 0.34);
+}
+
 .content-section,
 .contact-section {
   display: grid;
