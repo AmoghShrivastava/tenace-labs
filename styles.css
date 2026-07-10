@@ -237,17 +237,6 @@ h1 {
   border-color: rgba(16, 19, 22, 0.38);
 }
 
-.button.yc-orange {
-  color: #ffffff;
-  background: #ff6600;
-  border-color: #ff6600;
-}
-
-.button.yc-orange:hover {
-  background: #e85d00;
-  border-color: #e85d00;
-}
-
 .button.tertiary {
   color: var(--accent-dark);
   background: transparent;
