@@ -96,12 +96,6 @@ a {
   gap: 40px;
 }
 
-.hero-side {
-  display: grid;
-  gap: 42px;
-  justify-items: end;
-}
-
 .launch-badge {
   justify-self: end;
   max-width: 390px;
@@ -139,104 +133,6 @@ a {
 
 .launch-badge:hover {
   border-color: rgba(16, 19, 22, 0.34);
-}
-
-.tactile-illustration {
-  position: relative;
-  width: min(100%, 390px);
-  min-height: 430px;
-  display: grid;
-  align-content: center;
-  justify-items: center;
-  overflow: hidden;
-}
-
-.tactile-illustration::before {
-  content: "";
-  position: absolute;
-  inset: 36px 0 22px;
-  background:
-    linear-gradient(rgba(16, 19, 22, 0.08) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(16, 19, 22, 0.08) 1px, transparent 1px);
-  background-size: 34px 34px;
-  border-radius: 999px 999px 58% 58%;
-  mask-image: radial-gradient(circle at 50% 50%, #000 0%, #000 42%, transparent 72%);
-  opacity: 0.62;
-  transform: perspective(560px) rotateX(58deg) rotateZ(-8deg);
-  transform-origin: 50% 58%;
-}
-
-.tactile-illustration::after {
-  content: "";
-  position: absolute;
-  width: 268px;
-  height: 268px;
-  border: 1px solid rgba(30, 107, 90, 0.16);
-  border-radius: 50%;
-  box-shadow:
-    0 0 0 38px rgba(30, 107, 90, 0.035),
-    0 0 0 86px rgba(16, 19, 22, 0.025);
-}
-
-.sensor-field {
-  position: relative;
-  width: 292px;
-  height: 292px;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-}
-
-.sensor-field img {
-  position: relative;
-  z-index: 2;
-  width: 248px;
-  height: 248px;
-  object-fit: contain;
-  filter: drop-shadow(0 28px 34px rgba(20, 24, 28, 0.12));
-  transform: rotate(-8deg);
-}
-
-.sensor-dot {
-  position: absolute;
-  z-index: 3;
-  display: block;
-  border-radius: 50%;
-  box-shadow: 0 12px 24px rgba(20, 24, 28, 0.16);
-}
-
-.dot-primary {
-  width: 20px;
-  height: 20px;
-  top: 98px;
-  right: 86px;
-  background: #28bed0;
-}
-
-.dot-secondary {
-  width: 12px;
-  height: 12px;
-  right: 118px;
-  bottom: 114px;
-  background: #8d3a8d;
-}
-
-.dot-tertiary {
-  width: 8px;
-  height: 8px;
-  right: 88px;
-  bottom: 142px;
-  background: #101316;
-}
-
-.tactile-illustration p {
-  position: absolute;
-  right: 16px;
-  bottom: 18px;
-  margin: 0;
-  color: rgba(92, 99, 105, 0.78);
-  font-size: 0.78rem;
-  font-weight: 700;
 }
 
 .eyebrow,
@@ -571,15 +467,6 @@ h2 {
   .hero-grid {
     grid-template-columns: 1fr;
     gap: 28px;
-  }
-
-  .hero-side {
-    gap: 24px;
-    justify-items: stretch;
-  }
-
-  .tactile-illustration {
-    display: none;
   }
 
   .project-links {
