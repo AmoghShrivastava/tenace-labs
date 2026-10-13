@@ -3,127 +3,75 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta
-      name="description"
-      content="Tenace Labs is building foundation models for tactile intelligence in robots."
-    >
-    <title>Tenace Labs</title>
+    <meta name="description" content="Tenace Labs is building the intelligence layer for robots: world models, tactile foundation models, and sim-to-real policy transfer.">
+    <title>Tenace Labs — Intelligence for robots</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    >
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <main class="page-shell">
-      <header class="site-header" aria-label="Primary">
+    <main class="site-shell">
+      <header class="site-header">
         <a class="brand" href="/" aria-label="Tenace Labs home">
-          <img class="brand-mark" src="assets/tenace-labs-logo.png" alt="" aria-hidden="true">
+          <span class="brand-icon"><span></span><span></span><span></span></span>
           <span>Tenace Labs</span>
         </a>
+        <div class="header-status"><span class="status-dot"></span> Building in public</div>
         <nav class="nav-links" aria-label="Site">
+          <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
         </nav>
       </header>
 
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-grid">
-          <div>
-            <h1 id="hero-title">Tenace Labs</h1>
-            <p class="hero-copy">
-              Building foundation models for tactile intelligence in robots.
-            </p>
-            <p class="project-note">
-              Robots can see. We are teaching them to feel. Because robots that cannot
-              sense contact are still operating blind.
-            </p>
-            <p class="prototype-note">
-              Our work spans tactile representations, robot contact, and kinematically
-              grounded world models.
-            </p>
-            <div class="project-links" aria-label="Featured work">
-              <a class="project-link" href="https://tack.tenacelabs.com" target="_blank" rel="noreferrer">
-                <span class="project-link-body">
-                  <strong>TacK-JEPA</strong>
-                  <span class="project-link-copy">A force-native tactile world model grounded in exact robot hand kinematics.</span>
-                </span>
-                <span class="project-link-arrow" aria-hidden="true">&rarr;</span>
-              </a>
-              <a class="project-link" href="https://tactility.tenacelabs.com" target="_blank" rel="noreferrer">
-                <span class="project-link-body">
-                  <strong>Tactility</strong>
-                  <span class="project-link-copy">An early prototype for turning tactile sensor data into representations robots can learn from.</span>
-                </span>
-                <span class="project-link-arrow" aria-hidden="true">&rarr;</span>
-              </a>
-            </div>
-          </div>
-          <a class="launch-badge" href="https://create-x.gatech.edu/launch" target="_blank" rel="noreferrer">
-            <span class="launch-logos" aria-hidden="true">
-              <img src="assets/georgia-tech-logo.png" alt="">
-              <img src="assets/create-x-logo.jpg" alt="">
-            </span>
-            <span>Backed by Georgia Tech's CREATE-X Launch</span>
+      <section class="intro" aria-labelledby="intro-title">
+        <div class="intro-label">TL / 001<br>Embodied intelligence</div>
+        <div class="intro-copy">
+          <p class="overline">The intelligence layer for robots</p>
+          <h1 id="intro-title">We make machines<br><span>learn from the world.</span></h1>
+          <p class="intro-description">World models, tactile foundation models, and sim-to-real policy transfer for robots that can sense, predict, and act.</p>
+        </div>
+      </section>
+
+      <section class="support-strip" aria-label="Support and affiliation">
+        <div class="support-copy"><span class="tiny-label">Supported by</span><strong>Georgia Tech CREATE-X Launch</strong><span>Atlanta, GA · 2026</span></div>
+        <a class="support-logos" href="https://create-x.gatech.edu/launch" target="_blank" rel="noreferrer" aria-label="Georgia Tech CREATE-X Launch">
+          <img src="assets/georgia-tech-logo.png" alt="Georgia Tech">
+          <span class="logo-divider"></span>
+          <img src="assets/create-x-logo.jpg" alt="CREATE-X">
+          <span class="support-arrow" aria-hidden="true">↗</span>
+        </a>
+      </section>
+
+      <section id="projects" class="projects-section" aria-labelledby="projects-title">
+        <div class="section-topline"><p class="overline">Current projects</p><p class="section-count">04 / active</p></div>
+        <h2 id="projects-title">From contact<br>to capability.</h2>
+        <div class="project-grid">
+          <a class="project-card project-card-lime" href="https://dribble.tenacelabs.com" target="_blank" rel="noreferrer">
+            <div class="project-visual visual-dribble" aria-hidden="true"><span class="orbit orbit-one"></span><span class="orbit orbit-two"></span><span class="dribble-ball"></span><span class="visual-caption">SIM → REAL</span></div>
+            <div class="project-info"><div class="project-top"><span class="project-index">01</span><span class="project-type">Policy transfer ↗</span></div><h3>Dribble</h3><p>Learning dexterous, contact-rich behavior across simulation and the real world.</p></div>
+          </a>
+          <a class="project-card project-card-blue" href="https://tack.tenacelabs.com" target="_blank" rel="noreferrer">
+            <div class="project-visual visual-tack" aria-hidden="true"><span class="tactile-grid"></span><span class="force-vector vector-a">↗</span><span class="force-vector vector-b">↗</span><span class="visual-caption">FORCE FIELD</span></div>
+            <div class="project-info"><div class="project-top"><span class="project-index">02</span><span class="project-type">World models ↗</span></div><h3>TacK-JEPA</h3><p>Force-native tactile world models grounded in exact robot hand kinematics.</p></div>
+          </a>
+          <a class="project-card project-card-coral" href="https://salty.tenacelabs.com" target="_blank" rel="noreferrer">
+            <div class="project-visual visual-salty" aria-hidden="true"><span class="salt-node node-a"></span><span class="salt-node node-b"></span><span class="salt-node node-c"></span><span class="salt-line line-a"></span><span class="salt-line line-b"></span><span class="visual-caption">ROBUST / ADAPTIVE</span></div>
+            <div class="project-info"><div class="project-top"><span class="project-index">03</span><span class="project-type">Robotics systems ↗</span></div><h3>Salty</h3><p>Tools for building robust robot policies when the environment refuses to cooperate.</p></div>
+          </a>
+          <a class="project-card project-card-violet" href="https://tactility.tenacelabs.com" target="_blank" rel="noreferrer">
+            <div class="project-visual visual-tactility" aria-hidden="true"><span class="touch-wave wave-one"></span><span class="touch-wave wave-two"></span><span class="touch-wave wave-three"></span><span class="touch-point"></span><span class="visual-caption">TOUCH / SIGNAL</span></div>
+            <div class="project-info"><div class="project-top"><span class="project-index">04</span><span class="project-type">Tactile models ↗</span></div><h3>Tactility</h3><p>Representations that turn raw tactile sensor data into something robots can learn from.</p></div>
           </a>
         </div>
       </section>
 
-      <section id="collaborate" class="content-section" aria-labelledby="collaborate-title">
-        <h2 id="collaborate-title">Working in robotics, tactile sensing, or embodied AI?</h2>
-        <p>
-          If you are building, researching, investing, operating, or hiring around robot
-          touch and physical intelligence, we would like to hear from you.
-        </p>
-      </section>
-
       <section id="contact" class="contact-section" aria-labelledby="contact-title">
-        <div>
-          <h2 id="contact-title">Reach Tenace Labs</h2>
-          <p>
-            Send a note directly, or email
-            <a href="mailto:amoghshri1601@gmail.com">amoghshri1601@gmail.com</a>.
-          </p>
-        </div>
-        <form
-          class="inquiry-form"
-          action="https://formsubmit.co/amoghshri1601@gmail.com"
-          method="POST"
-        >
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_template" value="table">
-          <input type="hidden" name="_subject" value="New Tenace Labs inquiry">
-          <input type="text" name="_honey" tabindex="-1" autocomplete="off" class="form-honey">
-          <label>
-            <span>Subject</span>
-            <input name="subject" type="text" autocomplete="off" required>
-          </label>
-          <label>
-            <span>Your email</span>
-            <input name="email" type="email" autocomplete="email" required>
-          </label>
-          <label>
-            <span>Inquiry</span>
-            <textarea name="message" rows="6" required></textarea>
-          </label>
-          <button class="button primary" type="submit">Send inquiry</button>
-          <p class="form-note">
-            By submitting, you agree that we may use your information to respond to your inquiry.
-          </p>
-        </form>
+        <div><p class="overline">Open channel</p><h2 id="contact-title">Let’s build the<br>physical future.</h2></div>
+        <div class="contact-right"><p>For research collaborations, early access, or thoughtful conversations about physical intelligence.</p><a class="contact-email" href="mailto:amoghshri1601@gmail.com">amoghshri1601@gmail.com <span>↗</span></a><form class="inquiry-form" action="https://formsubmit.co/amoghshri1601@gmail.com" method="POST"><input type="hidden" name="_captcha" value="false"><input type="hidden" name="_template" value="table"><input type="hidden" name="_subject" value="New Tenace Labs inquiry"><input type="text" name="_honey" tabindex="-1" autocomplete="off" class="form-honey"><label><span>Subject</span><input name="subject" type="text" autocomplete="off" required></label><label><span>Your email</span><input name="email" type="email" autocomplete="email" required></label><label><span>Inquiry</span><textarea name="message" rows="4" required></textarea></label><button type="submit">Send inquiry <span>↗</span></button><small>By submitting, you agree that we may use your information to respond.</small></form></div>
       </section>
 
-      <footer class="site-footer">
-        <p>&copy; 2026 Tenace Labs. All rights reserved.</p>
-        <nav aria-label="Legal">
-          <a href="privacy.html">Privacy</a>
-        </nav>
-        <p class="footer-disclaimer">
-          Georgia Tech and CREATE-X names and marks belong to their respective owners.
-          Participation in CREATE-X Launch does not imply endorsement of Tenace Labs products or services.
-        </p>
-      </footer>
+      <footer class="site-footer"><span>© 2026 Tenace Labs</span><span>Georgia Tech and CREATE-X names and marks belong to their respective owners.</span><a href="privacy.html">Privacy ↗</a></footer>
     </main>
     <script src="script.js"></script>
   </body>
