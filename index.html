@@ -25,6 +25,24 @@
       </header>
 
       <section class="intro" aria-labelledby="intro-title">
+        <div class="motion-stage" aria-hidden="true">
+          <svg class="robot-arm" viewBox="0 0 520 420" role="presentation">
+            <g class="arm-shadow"><ellipse cx="285" cy="375" rx="170" ry="18"></ellipse></g>
+            <g class="arm-lines">
+              <path d="M24 74H496M24 144H496M24 214H496M24 284H496M24 354H496M74 24V396M144 24V396M214 24V396M284 24V396M354 24V396M424 24V396" />
+            </g>
+            <g class="arm-mechanism">
+              <path class="arm-link arm-link-back" d="M258 320 L205 190"></path>
+              <path class="arm-link arm-link-front" d="M205 190 L333 116"></path>
+              <circle class="arm-joint arm-joint-base" cx="258" cy="320" r="42"></circle>
+              <circle class="arm-joint arm-joint-elbow" cx="205" cy="190" r="27"></circle>
+              <circle class="arm-joint arm-joint-wrist" cx="333" cy="116" r="18"></circle>
+              <path class="arm-gripper" d="M333 116 L379 93 M333 116 L383 133"></path>
+              <path class="arm-gripper-tip" d="M379 93 l12 -3 M383 133 l12 4"></path>
+            </g>
+            <text x="24" y="388">REACH / CONTACT / RETURN</text>
+          </svg>
+        </div>
         <div class="intro-copy">
           <p class="overline">The intelligence layer for robots</p>
           <h1 id="intro-title">We make machines<br><span>learn from the world.</span></h1>
